@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GalleryActivity"
+    android:background="@color/colorPrimary">
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="bt2"
+        android:text="Delete Image"
+        android:textSize="25dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/fontstyle"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/strokebutton"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/below_bar_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="bt1"
+        android:text="Select Image"
+        android:textSize="25dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/fontstyle"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/strokebutton"
+        app:layout_constraintBottom_toTopOf="@+id/below_bar_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/middle_bar_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:onClick="bt3"
+        android:text="Confirm"
+        android:textSize="25dp"
+        android:textAllCaps="false"
+        android:fontFamily="@font/fontstyle"
+        android:textColor="@color/colorPrimaryDark"
+        android:background="@drawable/strokebutton"
+        app:layout_constraintBottom_toTopOf="@+id/middle_bar_guideline"
+        app:layout_constraintTop_toBottomOf="@+id/top_bar_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/top_bar_guideline"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@color/colorPrimary"
+        />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/below_bar_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        android:background="@color/colorPrimaryDark"
+        app:layout_constraintGuide_percent="0.92"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middle_bar_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        app:layout_constraintGuide_percent="0.84"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_bar_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        app:layout_constraintGuide_percent="0.76"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

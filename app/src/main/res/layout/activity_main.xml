@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    tools:context=".MainActivity">
+
+
+
+    <TextView
+        android:id="@+id/imageview_theme"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:text="Skincam"
+        android:fontFamily="@font/fontstyle"
+        android:textSize="100sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:gravity="center"
+
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/image_bottom_bar_guideline"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintWidth_percent="0.5"/>
+
+    <Button
+        android:id="@+id/btn_camera"
+        android:textAllCaps="false"
+        android:text="Camera"
+        android:fontFamily="@font/fontstyle"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:background="@drawable/roundbutton"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/middle_bar_guideline"
+        app:layout_constraintTop_toBottomOf="@id/top_bar_guideline"
+        />
+
+    <Button
+        android:id="@+id/btn_gallery"
+        android:textAllCaps="false"
+        android:text="Gallery"
+        android:fontFamily="@font/fontstyle"
+        android:textColor="@color/colorPrimary"
+        android:textSize="30dp"
+        android:layout_height="0dp"
+        android:layout_width="0dp"
+        android:background="@drawable/roundbutton"
+        app:layout_constraintWidth_percent="0.5"
+        app:layout_constraintHeight_percent="0.08"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/below_bar_guideline"
+        app:layout_constraintTop_toBottomOf="@id/middle_bar_guideline"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/below_bar_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        app:layout_constraintGuide_percent="0.9"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/middle_bar_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        app:layout_constraintGuide_percent="0.8"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/top_bar_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        app:layout_constraintGuide_percent="0.7"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/image_bottom_bar_guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation = "horizontal"
+        app:layout_constraintGuide_percent="0.6"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
